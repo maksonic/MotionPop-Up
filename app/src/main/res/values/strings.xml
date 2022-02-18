@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MotionPop-Up</string>
+    <string name="btn_currency">Основная валюта</string>
+    <string name="btn_download">Сохранить секретный ключ</string>
+    <string name="txt_title_main_toolbar">Настройки</string>
+    <string name="btn_notes">Сохранить в заметки</string>
+    <string name="btn_cloud">Сохранить в облако</string>
+    <string name="btn_phone">Скачать на устройство</string>
+    <string name="btn_rate_app">Оценить приложение</string>
 </resources>

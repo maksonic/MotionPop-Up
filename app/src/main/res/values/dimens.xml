@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height">62dp</dimen>
+
+    <dimen name="padding_36">36dp</dimen>
+    <dimen name="padding_32">32dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="elevation_8dp">8dp</dimen>
+    <dimen name="corner_radius_16dp">16dp</dimen>
+</resources>

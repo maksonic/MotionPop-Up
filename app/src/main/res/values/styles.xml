@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextBtn.Top" parent="Widget.MaterialComponents.TextView">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingStart">@dimen/padding_16</item>
+        <item name="android:paddingEnd">@dimen/padding_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_item_top</item>
+        <item name="android:foreground">@drawable/ripple_top</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="drawableTint">@color/picton_blue</item>
+    </style>
+
+    <style name="TextBtn.Body" parent="Widget.MaterialComponents.TextView">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingStart">@dimen/padding_16</item>
+        <item name="android:paddingEnd">@dimen/padding_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:foreground">@drawable/ripple_body</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="drawableTint">@color/picton_blue</item>
+    </style>
+
+    <style name="TextBtn.Bottom" parent="Widget.MaterialComponents.TextView">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingStart">@dimen/padding_16</item>
+        <item name="android:paddingEnd">@dimen/padding_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_item_bottom</item>
+        <item name="android:foreground">@drawable/ripple_bottom</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="drawableTint">@color/picton_blue</item>
+    </style>
+</resources>

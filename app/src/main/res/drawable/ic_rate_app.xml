@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/ic_outline_thumb_up_off_alt_24"
+        android:width="32dp"
+        android:height="32dp" />
+
+</layer-list >

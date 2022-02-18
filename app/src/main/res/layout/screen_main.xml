@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cornflower_dark_blue"
+    android:fitsSystemWindows="true"
+    app:layoutDescription="@xml/screen_main_scene">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_title_main_toolbar"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btnCurrency"
+        style="@style/TextBtn.Top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:text="@string/btn_currency" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/currencyAbbreviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:text="RUB"
+        android:textColor="@color/picton_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:textAllCaps="true" />
+
+    <LinearLayout
+        android:id="@+id/dividerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ebony_clay"
+        android:orientation="vertical">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            app:dividerColor="@color/ebony_clay_light" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/clickableBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/containerSaveActions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_item_bottom"
+        android:backgroundTint="@color/ebony_clay_light"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btnSaveKey"
+            style="@style/TextBtn.Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/bg_item_bottom"
+            android:drawableEnd="@drawable/ic_save_key"
+            android:foreground="@drawable/ripple_bottom"
+            android:text="@string/btn_download" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btn_save_to_phone"
+            style="@style/TextBtn.Body"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:drawableEnd="@drawable/ic_download_to_phone_key"
+            android:text="@string/btn_phone"
+            app:drawableTint="@color/picton_blue" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            app:dividerColor="@color/manatee_light" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btn_save_to_cloud"
+            style="@style/TextBtn.Body"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:drawableEnd="@drawable/ic_save_cloud"
+            android:text="@string/btn_cloud"
+            app:drawableTint="@color/picton_blue" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            app:dividerColor="@color/manatee_light" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btn_save_to_notes"
+            style="@style/TextBtn.Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:backgroundTint="@color/ebony_clay_light"
+            android:drawableEnd="@drawable/ic_save_notes"
+            android:text="@string/btn_notes"
+            app:drawableTint="@color/picton_blue" />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btnRateApp"
+        style="@style/TextBtn.Body"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_item_one"
+        android:drawableEnd="@drawable/ic_rate_app"
+        android:foreground="@drawable/ripple_one"
+        android:text="@string/btn_rate_app" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/containerPopUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/ebony_clay_light"
+        app:cardCornerRadius="@dimen/corner_radius_16dp"
+        app:cardElevation="@dimen/elevation_8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPopUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:spanCount="1"
+            tools:listitem="@layout/item_currency_popup" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
